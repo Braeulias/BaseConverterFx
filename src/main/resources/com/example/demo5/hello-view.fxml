@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.HelloController" style="-fx-padding: 20; -fx-background-color: #333;">
+    <TextField fx:id="numberInput" promptText="Enter number" />
+    <TextField fx:id="originalBaseInput" promptText="Original base" />
+    <TextField fx:id="destinationBaseInput" promptText="Destination base" />
+    <Slider fx:id="fractionalDigitsSlider" min="0" max="10000" value="5000" showTickLabels="true" showTickMarks="true" majorTickUnit="1000" blockIncrement="1"/>
+    <Button text="Convert" onAction="#handleConvertAction"/>
+    <Label fx:id="resultLabel" text="Result: " />
+</VBox>
